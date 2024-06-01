@@ -1,4 +1,5 @@
 import Notes from "@/app/_components/notes";
+import StudyView from "@/app/_components/study-view";
 import UploadView from "@/app/_components/upload/upload";
 import {
   AlignRight,
@@ -61,7 +62,7 @@ export const bookViews: BookViewsType = {
   },
   chat: {
     name: "Studypal",
-    children: <div>Study</div>,
+    children: <StudyView/>,
     icon: PersonStanding,
   },
 } as const;
