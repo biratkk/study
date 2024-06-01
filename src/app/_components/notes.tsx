@@ -8,9 +8,7 @@ import { useTheme } from "next-themes";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
-type NoteProps = {};
-
-export default function Notes({}: NoteProps) {
+export default function Notes() {
   const { bookId: bookIdString } = useParams<{ bookId: string }>();
   const bookId = parseInt(bookIdString);
   const { theme } = useTheme();
