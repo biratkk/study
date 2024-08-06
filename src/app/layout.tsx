@@ -33,15 +33,20 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <TRPCReactProvider>
-        <TooltipProvider>
-          <body className="overflow-x-hidden">
-            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-              <Navbar />
-              {children}
-              <Toaster />
-            </ThemeProvider>
-          </body>
-        </TooltipProvider>
+          <TooltipProvider>
+            <body className="overflow-x-hidden">
+              <ThemeProvider
+                attribute="class"
+                defaultTheme="dark"
+                enableSystem
+                disableTransitionOnChange
+              >
+                <Navbar />
+                {children}
+                <Toaster />
+              </ThemeProvider>
+            </body>
+          </TooltipProvider>
       </TRPCReactProvider>
     </html>
   );
